@@ -4,7 +4,7 @@ import { useThemeContext } from './contexts/ThemeContextProvider'
 
 function App() {
 
-  const [currentTheme, toggleTheme] = useThemeContext();
+  const [currentTheme, toggleTheme, setToSystem] = useThemeContext();
   const {redirectToAuthCodeFlow} = useSpotifyAuthContext();
 
   return (
